@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link
       rel="stylesheet"
@@ -10,65 +11,65 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    
     <script
       src="https://kit.fontawesome.com/b26dc72112.js"
       crossorigin="anonymous"
     ></script>
-
-    <link href="src/styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
 
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="page-share">
-          <i class="fa fa-share-alt" aria-hidden="true"></i>
-          <i class="fa fa-star-o" aria-hidden="true"></i>
+      <div class="page-share">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+        <i class="fa fa-star-o" aria-hidden="true"></i>
+      </div>
+      <form class="search-city">
+        <input
+          type="text"
+          class="enter-city"
+          placeholder="Enter your city"
+          autocomplete="off"
+          id="city"
+        />
+
+        <i class="fa fa-search" aria-hidden="true"></i
+        ><button type="click" id="button" class="btn btn-info">Current</button>
+      </form>
+
+      <div id="cityDisplayed"></div>
+      <div class="now"></div>
+      <div class="row">
+        <div class="col-4 emoji-now"></div>
+        <div class="col-4 temperature-now">
+          <span id="current-temperature"></span> <span id="celsius"> °C</span>
+          <span id="farenheit"></span>
         </div>
-        <form class="search-city">
-          <input
-            type="text"
-            class="enter-city"
-            placeholder="Enter your city"
-            autocomplete="off"
-            id="city"
-          />
-
-          <i class="fa fa-search" aria-hidden="true"></i
-          ><button type="click" id="button" class="btn btn-info">
-            Current
-          </button>
-        </form>
-
-        <div id="cityDisplayed"></div>
-        <div class="now"></div>
-        <div class="row">
-          <div class="col-4 emoji-now"></div>
-          <div class="col-4 temperature-now">
-            <span id="current-temperature"></span> <span id="celsius"> °C</span>
-            <span id="farenheit"></span>
-          </div>
-          <div class="col-4">
-            <div class="row-weather">
-              <div id="weather-description"></div>
-              <div class="humidity">
-                <span id="humidity"></span>
-              </div>
-
-              <span id="wind"></span>
+        <div class="col-4">
+          <div class="row-weather">
+            <div id="weather-description"></div>
+            <div class="humidity">
+              <span id="humidity"></span>
             </div>
+
+            <span id="wind"></span>
           </div>
         </div>
-        <hr />
-        <div class="row">
-          <div class="col-2">
-            <div class="row-inner">
-              <div class="date">Sun</div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-2">
+          <div class="row-inner">
+            <div class="date">
+              Sun
 
               <div class="icon">⛅️</div>
               <div class="temperature">20°C</div>
             </div>
           </div>
+        </div>
           <div class="col-2">
             <div class="row-inner">
               <div class="date">Mon</div>
@@ -110,14 +111,8 @@
             </div>
           </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/irmaredik/SheCodes-W6L3-app"
-            target="_blank"
-          >
-            Open-source code</a
-          >, by Irma Redikaite
-        </small>
+      </div>
+        <small><a class="footer" href="https://github.com/irmaredik/SheCodes-W6L3-app"> Open-source code</a>, by Irma Redikaite</small>
       </div>
       <script src="src/index.js"></script>
     </div>

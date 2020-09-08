@@ -1,3 +1,4 @@
+
 hr {
   color: #1cb1ab;
   border-color: #1cb1ab;
@@ -8,20 +9,23 @@ hr {
   color: #1cb1ab;
 }
 .container {
-  display: block;
-  width: 45%;
-  border: 2px solid #1cb1ab;
-  text-align: left;
-  margin: 20px;
-  padding: 20px;
-  background-color: #f8fdfe;
+  max-width: 600px;
+  margin: 30px auto;
 }
 
+.weather-app {
+  
+  border: 2px solid #1cb1ab;
+  border-radius: 20px;
+  
+  padding: 20px;
+}
 .page-share {
   display: line;
   text-align: right;
   color: #1cb1ab;
 }
+
 
 .search-city {
   display: block;
@@ -60,7 +64,8 @@ hr {
 }
 .now {
   text-align: center;
-}
+  
+
 
 .emoji-now {
   text-align: right;
@@ -69,6 +74,7 @@ hr {
 .temperature-now {
   text-align: center;
   font-size: 25px;
+
   padding-left: 0;
   color: #1cb1ab;
 }
@@ -96,3 +102,5 @@ hr {
   font-size: 38px;
   color: #1cb1ab;
 }
+
+
