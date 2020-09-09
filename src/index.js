@@ -16,9 +16,9 @@ let now = document.querySelector(".now");
 
 now.innerHTML = `${day}, ${hour}:${seconds}`;
 
-let form = document.querySelector(".search-city");
-form.addEventListener("submit", cityName);
-form.addEventListener("click", findLocation);
+let form = document.querySelector(".form-control");
+form.addEventListener("search", cityName);
+form.addEventListener("submit", findLocation);
 
 function findLocation() {
   navigator.geolocation.getCurrentPosition(currentLocation);

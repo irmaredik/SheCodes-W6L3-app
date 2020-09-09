@@ -11,7 +11,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/b26dc72112.js"
       crossorigin="anonymous"
@@ -22,10 +22,16 @@
   <body>
     <div class="container">
       <div class="weather-app">
-      <div class="page-share">
-        <i class="fa fa-share-alt" aria-hidden="true"></i>
-        <i class="fa fa-star-o" aria-hidden="true"></i>
-      </div>
+        <div class="search-engine">
+          <form class="form-inline">
+          <input type="text" class="form-control" placeholder="Enter your city" id="city"
+             aria-describedby="button-addon4">
+          <div class="input-group-append" id="button-addon4">
+            <button class="btn btn-outline-secondary" type="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="btn btn-outline-secondary" type="submit" id="button"><i class="fas fa-map-marker-alt"></i></button>
+          </div></form>
+        </div>
+      
       <form class="search-city">
         <input
           type="text"
@@ -35,8 +41,9 @@
           id="city"
         />
 
+  
         <i class="fa fa-search" aria-hidden="true"></i
-        ><button type="click" id="button" class="btn btn-info">Current</button>
+        >
       </form>
 
       <div id="cityDisplayed"></div>
@@ -118,3 +125,4 @@
     </div>
   </body>
 </html>
+
