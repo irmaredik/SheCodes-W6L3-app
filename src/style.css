@@ -17,11 +17,7 @@ hr {
   text-align: center;
   margin: auto;
 }
-.nform3 {
-  max-width: 400px;
-  display: block;
-  text-align: center;
-}
+
 .weather-app {
   border: 2px solid #1cb1ab;
   border-radius: 20px;
@@ -37,31 +33,39 @@ hr {
 .search-city {
   text-align: center;
 }
-.enter-city {
+.form-control {
   border: 1px solid #1cb1ab;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 0 auto;
   padding: 5px 10px;
 
   background-color: #e1f4f6;
   text-align: center;
-  position: fixed;
+
   top: 40px;
   left: 255px;
 }
 
-#button {
+#button1 {
   background: #1cb1ab;
   color: #e1f4f6;
+  border-radius: 20px;
+  border: none;
+  margin: 0px 2px 0px 0px;
+}
+#button2 {
+  color: red;
+  border-color: #1cb1ab;
+  border-radius: 20px;
 }
 .now {
   text-align: center;
   font-family: "Kalam", cursive;
 }
 
-.emoji-now {
-  text-align: right;
-  font-size: 100px;
+#icon-now {
+  text-align: left;
+  font-size: 150px;
 }
 .temperature-now {
   text-align: center;
@@ -92,7 +96,7 @@ hr {
   display: block;
   text-align: center;
   padding-top: 20px;
-  font-size: 38px;
+  font-size: 45px;
   color: #1cb1ab;
   font-family: "Kalam", cursive;
 }

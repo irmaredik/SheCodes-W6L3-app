@@ -16,9 +16,9 @@ let now = document.querySelector(".now");
 
 now.innerHTML = `${day}, ${hour}:${seconds}`;
 
-let form = document.querySelector(".form-control");
-form.addEventListener("search", cityName);
-form.addEventListener("submit", findLocation);
+let form = document.querySelector(".form-inline");
+form.addEventListener("submit", cityName);
+form.addEventListener("click", findLocation);
 
 function findLocation() {
   navigator.geolocation.getCurrentPosition(currentLocation);
@@ -67,6 +67,13 @@ function temperature(response) {
   let windMain = response.data.wind.speed;
   let wind = document.querySelector("#wind");
   wind.innerHTML = `Wind: ${windMain} km/h`;
+
+  let iconElement = document.querySelector("#icon-now");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].main);
 }
 
 //function celsiusTemperature() {

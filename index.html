@@ -27,29 +27,19 @@
           <input type="text" class="form-control" placeholder="Enter your city" id="city"
              aria-describedby="button-addon4">
           <div class="input-group-append" id="button-addon4">
-            <button class="btn btn-outline-secondary" type="search"><i class="fa fa-search" aria-hidden="true"></i></button>
-            <button class="btn btn-outline-secondary" type="submit" id="button"><i class="fas fa-map-marker-alt"></i></button>
+            <button class="btn btn-outline-secondary" type="submit" id="button1"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button class="btn btn-outline-secondary" type="click" id="button2"><i class="fas fa-map-marker-alt"></i></button>
           </div></form>
         </div>
       
-      <form class="search-city">
-        <input
-          type="text"
-          class="enter-city"
-          placeholder="Enter your city"
-          autocomplete="off"
-          id="city"
-        />
-
-  
-        <i class="fa fa-search" aria-hidden="true"></i
-        >
-      </form>
+        
 
       <div id="cityDisplayed"></div>
       <div class="now"></div>
       <div class="row">
-        <div class="col-4 emoji-now"></div>
+        <div class="col-4 emoji-now">
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="broken clouds" id="icon-now" class="float-left">
+        </div>
         <div class="col-4 temperature-now">
           <span id="current-temperature"></span> <span id="celsius"> °C</span>
           <span id="farenheit"></span>
