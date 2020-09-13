@@ -24,12 +24,16 @@
       <div class="weather-app">
         <div class="search-engine">
           <form class="form-inline">
-          <input type="text" class="form-control" placeholder="Enter your city" id="city"
-             aria-describedby="button-addon4">
+            <div class="row">
+              <div class="col-8">
+          <input type="search" class="form-control" placeholder="Enter your city" id="city" autocomplete="off"
+             aria-describedby="button-addon4"></div>
+            
           <div class="input-group-append" id="button-addon4">
+
             <button class="btn btn-outline-secondary" type="submit" id="button1"><i class="fa fa-search" aria-hidden="true"></i></button>
             <button class="btn btn-outline-secondary" type="click" id="button2"><i class="fas fa-map-marker-alt"></i></button>
-          </div></form>
+          </div></div></form>
         </div>
       
         
@@ -41,8 +45,8 @@
           <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="broken clouds" id="icon-now" class="float-left">
         </div>
         <div class="col-4 temperature-now">
-          <span id="current-temperature"></span> <span id="celsius"> °C</span>
-          <span id="farenheit"></span>
+          <span id="current-temperature"></span> <a href="#" id="celsius" class="active"> °C</a>|
+          <a href="#" id="farenheit">°F</a>
         </div>
         <div class="col-4">
           <div class="row-weather">

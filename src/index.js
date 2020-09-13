@@ -41,7 +41,6 @@ function cityName(event) {
   let input = document.querySelector("#city");
 
   displayCity.innerHTML = `${input.value}`;
-
   let units = "metric";
   let apiKey = "09ab1128d648c3c20978f99199981bde";
   let apiEndPoint = "https://api.openweathermap.org/data/2.5/weather?";
@@ -55,6 +54,8 @@ function temperature(response) {
   let temperatureRound = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#current-temperature");
   temperatureElement.innerHTML = `${temperatureRound}`;
+
+  celsiusTemperature = response.data.main.temp;
 
   let weatherDescription = response.data.weather[0].main;
   let weather = document.querySelector("#weather-description");
@@ -75,6 +76,31 @@ function temperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].main);
 }
+
+function farenheitTemperature(event) {
+  event.preventDefault();
+
+  let farenheitNow = (celsiusTemperature * 9) / 5 + 32;
+  let currentTemperature = document.querySelector("#current-temperature");
+  currentTemperature.innerHTML = Math.round(farenheitNow);
+  celsius.classList.remove("active");
+  farenheit.classList.add("active");
+}
+
+function celsiusTemperatureDisplay(event) {
+  event.preventDefault();
+  let currentTemperature = document.querySelector("#current-temperature");
+  currentTemperature.innerHTML = Math.round(celsiusTemperature);
+  farenheit.classList.remove("active");
+  celsius.classList.add("active");
+}
+
+let celsiusTemperature = null;
+let farenheit = document.querySelector("#farenheit");
+farenheit.addEventListener("click", farenheitTemperature);
+
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", celsiusTemperatureDisplay);
 
 //function celsiusTemperature() {
 //let celsius = document.querySelector("#current-temperature");

@@ -100,3 +100,11 @@ hr {
   color: #1cb1ab;
   font-family: "Kalam", cursive;
 }
+.temperature-now .active {
+  color: black;
+  cursor: default;
+
+.temperature-now .active:hover {
+ 
+  text-decoration: none;
+}
