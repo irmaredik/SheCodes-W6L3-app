@@ -21,7 +21,7 @@ h3 {
   text-align: left;
 }
 .search-engine {
-  max-width: 350px;
+  max-width: 300px;
   display: block;
   text-align: center;
   margin: auto;
@@ -73,7 +73,7 @@ text-align: center;
   color: #e1f4f6;
   border-radius: 10px;
   border: none;
-  margin: 0px 15px;
+  margin: 0px 10px;
  
 }
 
