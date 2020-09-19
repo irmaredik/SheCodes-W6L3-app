@@ -11,7 +11,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/b26dc72112.js"
       crossorigin="anonymous"
@@ -26,97 +29,74 @@
           <form class="form-inline">
             <div class="row">
               <div class="col-8">
-          <input type="search" class="form-control" placeholder="Enter your city" id="city" autocomplete="off"
-             aria-describedby="button-addon4"></div>
-            
-          <div class="input-group-append" id="button-addon4">
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="Enter your city"
+                  id="city"
+                  autocomplete="off"
+                  aria-describedby="button-addon4"
+                />
+              </div>
 
-            <button class="btn btn-outline-secondary" type="submit" id="button1"><i class="fa fa-search" aria-hidden="true"></i></button>
-            <button class="btn btn-outline-secondary" type="click" id="button2"><i class="fas fa-map-marker-alt"></i></button>
-          </div></div></form>
-        </div>
-      
-        
-
-      <div id="cityDisplayed"></div>
-      <div class="now"></div>
-      <div class="row">
-        <div class="col-4 emoji-now">
-          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="broken clouds" id="icon-now" class="float-left">
-        </div>
-        <div class="col-4 temperature-now">
-          <span id="current-temperature"></span> <a href="#" id="celsius" class="active"> °C</a>|
-          <a href="#" id="farenheit">°F</a>
-        </div>
-        <div class="col-4">
-          <div class="row-weather">
-            <div id="weather-description"></div>
-            <div class="humidity">
-              <span id="humidity"></span>
+              <div class="input-group-append" id="button-addon4">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  id="button"
+                >
+                  Search
+                </button>
+                
+              </div>
             </div>
+          </form>
+        </div>
 
-            <span id="wind"></span>
+        <div id="cityDisplayed"></div>
+        <div class="now"></div>
+        <div class="row">
+          <div class="col-8">
+          <span class="emoji-now">
+            <img
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt="broken clouds"
+              id="icon-now"
+             
+            />
+          </span>
+          <span class="temperature-now">
+            <span id="current-temperature"></span>
+            <a href="#" id="celsius" class="active"> °C</a>|
+            <a href="#" id="farenheit">°F</a>
+          </span></div>
+          <div class="col-4">
+            <div class="row-weather">
+              <div id="weather-description"></div>
+              <div class="humidity">
+                <span id="humidity"></span>
+              </div>
+
+              <span id="wind"></span>
+            </div>
           </div>
         </div>
+        <hr />
+        <div class="row" id="weather-forecast"></div>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-2">
-          <div class="row-inner">
-            <div class="date">
-              Sun
-
-              <div class="icon">⛅️</div>
-              <div class="temperature">20°C</div>
-            </div>
-          </div>
-        </div>
-          <div class="col-2">
-            <div class="row-inner">
-              <div class="date">Mon</div>
-
-              <div class="icon">☀️</div>
-              <div class="temperature">22°C</div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="row-inner">
-              <div class="date">Tue</div>
-
-              <div class="icon">⛅️</div>
-              <div class="temperature">22°C</div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="row-inner">
-              <div class="date">Wed</div>
-
-              <div class="icon">⛅️</div>
-              <div class="temperature">23°C</div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="row-inner">
-              <div class="date">Thu</div>
-
-              <div class="icon">⛅️</div>
-              <div class="temperature">23°C</div>
-            </div>
-          </div>
-          <div class="col-2">
-            <div class="row-inner">
-              <div class="date">Fri</div>
-
-              <div class="icon">⛅️</div>
-              <div class="temperature">23°C</div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <small><a class="footer" href="https://github.com/irmaredik/SheCodes-W6L3-app"> Open-source code</a>, by Irma Redikaite</small>
+    
+        <small
+          ><a
+            class="footer"
+            href="https://github.com/irmaredik/SheCodes-W6L3-app"
+          >
+            Open-source code</a
+          >, by Irma Redikaite</small
+        >
       </div>
       <script src="src/index.js"></script>
     </div>
   </body>
 </html>
+
 
