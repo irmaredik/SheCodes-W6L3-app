@@ -26,9 +26,10 @@
     <div class="container">
       <div class="weather-app">
         <div class="search-engine">
-          <form class="form-inline">
+          <form id="form-inline" class="mb-3">
             <div class="row">
-              <div class="col-8">
+            
+              <div class="col-9">
                 <input
                   type="search"
                   class="form-control"
@@ -36,40 +37,42 @@
                   id="city"
                   autocomplete="off"
                   aria-describedby="button-addon4"
-                />
+              />
               </div>
-
+<div class="col-3">
               <div class="input-group-append" id="button-addon4">
                 <button
                   class="btn btn-outline-secondary"
                   type="submit"
                   id="button"
                 >
-                  Search
+                  search
                 </button>
                 
-              </div>
-            </div>
+              </div></div>
+            </div> 
           </form>
+       
         </div>
 
-        <div id="cityDisplayed"></div>
+        <div id="cityDisplayed">London</div>
         <div class="now"></div>
         <div class="row">
           <div class="col-8">
-          <span class="emoji-now">
+            <div class="clearfix weather-temperature">
+         
             <img
               src="http://openweathermap.org/img/wn/10d@2x.png"
               alt="broken clouds"
               id="icon-now"
-             
+       
             />
-          </span>
-          <span class="temperature-now">
-            <span id="current-temperature"></span>
-            <a href="#" id="celsius" class="active"> °C</a>|
-            <a href="#" id="farenheit">°F</a>
-          </span></div>
+          
+          
+          <span id="current-temperature">20</span><span class="units">
+            <a href="#" id="celsius" class="active"> °C</a>|<a href="#" id="farenheit">°F</a>
+         </span></div>
+          </div>
           <div class="col-4">
             <div class="row-weather">
               <div id="weather-description"></div>
@@ -82,8 +85,40 @@
           </div>
         </div>
         <hr />
-        <div class="row" id="weather-forecast"></div>
-      </div>
+        <div class="row" id="weather-forecast">
+          <div class="col-2">
+            <h3>13:00</h3>
+            <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+            <div class="weather-forecast-temperature"><strong>20°</strong> 17°</div>
+            </div>
+            <div class="col-2">
+              <h3>13:00</h3>
+              <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+              <div class="weather-forecast-temperature"><strong>20°</strong> 17°</div>
+            </div>
+            <div class="col-2">
+              <h3>16:00</h3>
+              <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+              <div class="weather-forecast-temperature"><strong>20°</strong> 17°</div>
+            </div>
+            <div class="col-2">
+              <h3>19:00</h3>
+              <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+              <div class="weather-forecast-temperature"><strong>20°</strong> 17°</div>
+            </div>
+            <div class="col-2">
+              <h3>21:00</h3>
+              <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+              <div class="weather-forecast-temperature"><strong>20°</strong> 17°</div>
+            </div>
+            <div class="col-2">
+              <h3>23:00</h3>
+              <img src="http://openweathermap.org/img/wn/02d@2x.png" alt="" />
+              <div class="weather-forecast-temperature"><strong>20°</strong> 17°</div>
+            </div>
+          </div>
+        </div>
+      
     
         <small
           ><a

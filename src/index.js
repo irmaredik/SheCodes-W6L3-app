@@ -16,7 +16,7 @@ let now = document.querySelector(".now");
 
 now.innerHTML = `${day}, ${hour}:${minutes}`;
 
-let form = document.querySelector(".form-inline");
+let form = document.querySelector("#form-inline");
 form.addEventListener("submit", cityName);
 
 function formatHours(timestamp) {

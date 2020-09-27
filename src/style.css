@@ -2,11 +2,14 @@ hr {
   color: #1cb1ab;
   border-color: #1cb1ab;
   background: #1cb1ab;
+  position: relative;
+  top: -30px;
+  margin-bottom: 10px;
 }
 h3 {
-    font-size: 15px;
-    color: #424143;
-    font-family: "Kalam", cursive;
+  font-size: 15px;
+  color: #424143;
+  font-family: "Kalam", cursive;
 }
 
 ::placeholder {
@@ -20,33 +23,24 @@ h3 {
   margin: 30px auto;
   text-align: left;
 }
+
+.weather-app {
+  border: 2px solid #1cb1ab;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
 .search-engine {
-  max-width: 300px;
+  max-width: 450px;
   display: block;
   text-align: center;
   margin: auto;
 }
-.weather-forecast-temperature {
-    font-size: 15px;
-    color: #424143;
-    font-family: "Kalam", cursive;
-}
-.search-city     {
-    display: block;
-    text-align: center;
-}
-.weather-app {
-  border: 2px solid #1cb1ab;
-  border-radius: 20px;
-text-align: center;
-  padding: 20px;
-}
-.page-share {
-  display: line;
-  text-align: right;
-  color: #1cb1ab;
-}
 
+.col-8 {
+  display: block;
+  text-align: right;
+}
 
 .form-control {
   border: 1px solid #1cb1ab;
@@ -55,17 +49,62 @@ text-align: center;
   padding: 5px 10px;
 
   background-color: #e1f4f6;
-  
 }
+.weather-temperature .units {
+  position: relative;
+  font-size: 18px;
+  top: -50px;
+  font-family: "Kalam", cursive;
+}
+
+.page-share {
+  display: line;
+  text-align: right;
+  color: #1cb1ab;
+}
+
 .now {
   text-align: center;
   font-family: "Kalam", cursive;
   color: #424143;
+  font-size: 18px;
 }
 
-#city   {
-    color: #424143;
-    text-align: center;
+.weather-temperature {
+  display: block;
+}
+
+.row-weather {
+  display: block;
+  text-align: left;
+  border-left: 1px solid #1cb1ab;
+  padding-left: 20px;
+  margin-top: 30px;
+  font-size: 18px;
+  font-family: "Kalam", cursive;
+  color: #424143;
+}
+
+.row-inner {
+  text-align: center;
+}
+
+.temperature-now {
+  font-size: 23px;
+  font-family: "Kalam", cursive;
+  padding-left: 0;
+  color: #1cb1ab;
+}
+.weather-temperature .active {
+  color: #424143;
+  cursor: default;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+#city {
+  color: #424143;
+  text-align: center;
 }
 
 #button {
@@ -74,47 +113,23 @@ text-align: center;
   border-radius: 10px;
   border: none;
   margin: 0px 10px;
- 
+  font-family: "Kalam", cursive;
 }
-
-
 
 #icon-now {
-  
- block-size: 130px;
-}
-.temperature-now {
-  text-align: center;
-  font-size: 25px;
-  font-family: "Kalam", cursive;
-  padding-left: 0;
-  color: #1cb1ab;
-}
-
-.col-8 {
-    display: block;
-    text-align: right;
-}
-
-.row-weather {
-  display: block;
-  text-align: left;
-  border-left: 1px solid #1cb1ab;
-  padding-left: 20px;
-  margin-top: 40px;
-  font-size: 14px;
-  font-family: "Kalam", cursive;
-    color: #424143
-}
-
-.row-inner {
-  text-align: center;
+  margin-right: 5px;
+  height: 130px;
+  width: 130px;
+  position: relative;
+  left: -10px;
+  top: -30px;
 }
 #current-temperature {
-  font-size: 110px;
+  font-size: 100px;
   color: #424143;
+  font-family: "Kalam", cursive;
+  margin: auto;
 }
-
 #cityDisplayed {
   display: block;
   text-align: center;
@@ -125,16 +140,7 @@ text-align: center;
 }
 
 #weather-forecast {
-    color:  #424143;
-    font-size: 15px;
-}
-
-
-.temperature-now .active {
   color: #424143;
-  cursor: default;
-
-.temperature-now .active:hover {
- 
-  text-decoration: none;
+  font-size: 15px;
+  font-family: "Kalam", cursive;
 }
